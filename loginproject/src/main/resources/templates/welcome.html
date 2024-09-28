@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>Bem-vindo ao Sistema</h1>
-    <a href="/developer">Sobre o desenvolvedor</a>
+    <p>Seja bem-vindo! Este é um sistema incrível.</p>
+    <a th:href="@{/developer}">Sobre o desenvolvedor</a>
 </body>
 </html>
